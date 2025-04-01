@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operaciones con Matrices</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Operaciones con Matrices</h1>
+    
+    <div class="server-selector">
+      <button id="node-btn" class="active">Usar Node.js</button>
+      <button id="python-btn">Usar Python</button>
+    </div>
+    
+    <div class="operation-selector">
+      <button id="sum-btn" class="active">Suma de Matrices</button>
+      <button id="multiply-btn">Multiplicación de Matrices</button>
+    </div>
+
+    <div class="dimensions-input">
+      <h2>Dimensiones de las Matrices</h2>
+      <div>
+        <label for="rows">Filas:</label>
+        <input type="number" id="rows" min="1" value="2">
+      </div>
+      <div>
+        <label for="cols">Columnas:</label>
+        <input type="number" id="cols" min="1" value="2">
+      </div>
+      <button id="generate-matrices">Generar Matrices</button>
+    </div>
+
+    <div id="matrices-container" class="hidden">
+      <div class="matrices-input">
+        <div class="matrix-container">
+          <h3>Matriz 1</h3>
+          <div id="matrix1"></div>
+        </div>
+        <div class="matrix-container">
+          <h3>Matriz 2</h3>
+          <div id="matrix2"></div>
+        </div>
+      </div>
+      <button id="calculate">Calcular</button>
+    </div>
+
+    <div id="result-container" class="hidden">
+      <h2>Resultado</h2>
+      <div id="result-matrix"></div>
+      <p id="server-used"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
